@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+	<title>ContactForm</title>
+</head>
+<body>
+	<h2> Contact form</h2>
+	<form action="action_page.php">
+		<p> please enter your Contact information </p>
+      Full name:<br>
+      <input type="text" name="fullname" placeholder="Full name"><br>
+      Email:<br>
+      <input type="text" name="email"  placeholder="Email address"><br/>
+      <br/>
+      Select gender: <br/>
+    <input type ="radio" name="gender"  value="male" checked> Male <br />
+    <input type="radio"  name="gender" value= "female"> Female <br/>
+    <input  type="radio" name="gender"  value="other"> Other <br />
+    <br/>
+    In which Province do you live: <br/>
+   <select name="Province" >                                      
+      <option value="vienna" selected>Vienna</option>
+      <option  value="lowaus" >Lower Austria</option>                                
+      <option value="uppaus" >Upper Austria</option>
+      <option  value="sty" >Styria</option>
+      <option  value="tyr" >Tyrol</option>
+      <option  value="car" >Carinthia</option>
+      <option  value="salz" >Salzburg</option>
+      <option  value="vor" >Vorarlberg</option>
+      <option  value="bgld" >Burgenland</option>
+    </select>
+    <br/><br/>
+    What would you like to contact us about: <br/>
+      <textarea name="message" rows="10" cols="60">Your message.
+      </textarea>
+      <br/>
+      <br/>
+      <input type="submit" value="Send your message">
+    </form>
+</body>
+</html>
